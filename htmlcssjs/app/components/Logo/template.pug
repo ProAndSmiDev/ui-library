@@ -1,0 +1,11 @@
+mixin Logo(parent, isIcon)
+  - parent = parent ? parent : 'header';
+
+  a.logo(class=`${parent}__logo` href=logo.link.url title=logo.link.title)
+    if isIcon
+      svg.logo__icon
+        use(href=`/img/sprite.svg#${logo.name}`)
+    else
+      picture.logo__pic
+        source(srcset=`/img/${logo.name}` type="image/webp")
+        img(src=`/img/${logo.name}` alt=logo.alt)

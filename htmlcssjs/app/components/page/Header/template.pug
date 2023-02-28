@@ -1,4 +1,7 @@
+include ../../Logo/template
+
 mixin Header(parent)
     - parent = parent ? parent : 'page';
 
     header.header(class=`${parent}__header`)
+      +Logo

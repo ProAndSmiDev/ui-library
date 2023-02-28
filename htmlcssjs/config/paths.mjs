@@ -1,7 +1,7 @@
 import * as nodePath from 'path';
 
 const rootFolder = nodePath.basename(nodePath.resolve());
-const buildFolder = './docs/';
+const buildFolder = '../docs/';
 const devFolder = './app/';
 const assetsFolder = `${devFolder}assets/`;
 const allFolders = ['**', '!**/*.+(zip|rar|7zip)/**', '!node_modules/**', '!.idea/**', '!.git/**'];
