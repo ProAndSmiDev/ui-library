@@ -1,0 +1,4 @@
+mixin Footer(parent)
+    - parent = parent ? parent : 'page';
+
+    footer.footer(class=`${parent}__footer`)

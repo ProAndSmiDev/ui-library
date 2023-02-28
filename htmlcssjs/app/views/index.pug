@@ -1,0 +1,11 @@
+extends ../layout/template
+
+block metaSeo
+  title= home.title
+
+  for content, name in home.meta
+    +getMeta('', name, content)
+
+block content
+    .home
+        p Это главная страница сайта
